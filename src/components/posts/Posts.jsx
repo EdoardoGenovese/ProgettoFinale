@@ -12,17 +12,15 @@ export default function Posts () {
             body.innerHTML = ''
 
             for(const post of posts){
-
                 body.innerHTML += `
                     <h4>${post.title.rendered}</h4>
                     <p>${post.content.rendered}</p>
                 `
-
             }
         })
     
     return(
-        <div id="body-post">
+        <div id="body-post" className="container">
 
         </div>
     )
