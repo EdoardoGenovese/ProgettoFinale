@@ -16,10 +16,6 @@ export default class Api {
 
     categories() {
         let url = `${baseUrl}categories`;
-
-        // if (id !== undefined) {
-        //     url += `/${id}`;
-        // }
         
         return fetch(url).then(res => res.json());
     }

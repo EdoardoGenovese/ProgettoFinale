@@ -1,3 +1,5 @@
+import { faFacebookSquare, faInstagramSquare, faTwitterSquare, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 export default function Footer(){
@@ -8,7 +10,10 @@ export default function Footer(){
                 <div className="row justify-content-evenly">
                     <div className="col-6">
                         <h5>Ti piace ciò che vedi? Condividilo!</h5>
-                        <p>Inserimento social...</p>
+                        <FontAwesomeIcon icon={faFacebookSquare} size="3x" className="m-2" />
+                        <FontAwesomeIcon icon={faInstagramSquare} size="3x" className="m-2" />
+                        <FontAwesomeIcon icon={faTwitterSquare} size="3x" className="m-2" />
+                        <FontAwesomeIcon icon={faYoutubeSquare} size="3x" className="m-2" />
                     </div>
                     <div className="col-6">
                         <h5>Iscriviti per sapere le novità!</h5>

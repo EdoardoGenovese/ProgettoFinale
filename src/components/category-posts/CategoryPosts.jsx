@@ -1,8 +1,9 @@
 import React from 'react';
 import { PostList } from '../posts/Posts';
 import Api from '../../classes/Api';
+import withRouter from '../../functions/withRouter';
 
-export default class CategoryPosts extends PostList {
+class CategoryPosts extends PostList {
     constructor() {
         super();
         this.state = {
@@ -23,10 +24,13 @@ export default class CategoryPosts extends PostList {
     }
 
     componentDidUpdate(newProps) {
-        this.fetchData(newProps.match.params.id);
+        const { id } = newProps.router.params
+        this.fetchData(id);
     }
 
     componentDidMount() {
-        this.fetchData(this.props.match.params.id);
+        const { id } = this.props.router.params
+        this.fetchData(id);
     }
 }
+export default withRouter(CategoryPosts)
