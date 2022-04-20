@@ -10,9 +10,10 @@ export default function Contatti() {
             const body = document.getElementById('body-page');
 
             body.innerHTML = `
-                <h2 class="mb-2 mt-3s">${pages[0].title.rendered}</h2>
+                <h1 class="mb-2 mt-3 text-center">${pages[0].title.rendered}</h1>
                 <div class="row">
                     <form action="/action_page.php" class="col">
+                        <h2>Scrivici</h2>
                         <fieldset>
                             <input type="text" class="form-control mb-3" placeholder="Nome e Cognome" required style="width: 90%">
                             <input type="text" class="form-control mb-3" placeholder="Email" required style="width: 90%">
@@ -22,13 +23,13 @@ export default function Contatti() {
                         <button class="btn btn-success">Invia il messaggio</button>
                     </form>
                     <div class="col">
-                        <h2>Sede formativa</h2>
+                        <h2>Sede</h2>
                         <address>
-                            Via Appia 1 
+                            Via Libetta 1 <br>
                             00100 Roma (RM)
                         </address>
                         <address>
-                            <a href="#">assistenza.blog@noncliccare.com</a> 
+                            <a href="#">assistenza.blog@noncliccare.com</a> <br>
                             +39 1234567
                         </address>
                         <h2>Lavora con noi</h2>
