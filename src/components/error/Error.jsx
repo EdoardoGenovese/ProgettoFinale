@@ -1,3 +1,10 @@
+import { Link } from "react-router-dom";
+
 export function NotFound() {
-    return <h1 className="container">Oops! Not Found</h1>
+    return (
+        <div className="container text-center">
+            <h1>Oops! Not Found</h1>
+            <Link to='/'>Torna alla Home</Link>
+        </div>
+    )
 }

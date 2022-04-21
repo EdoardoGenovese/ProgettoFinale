@@ -11,6 +11,7 @@ import Footer from './components/footer/Footer';
 import CategoryPosts from './components/category-posts/CategoryPosts';
 import { NotFound } from './components/error/Error';
 import Post from './components/post/Post';
+import TagPost from './components/tag-post/TagPost';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/' element={<PostList />}/>
         <Route path='/post/:id' element={<Post />} />
         <Route path='/category/:id' element={<CategoryPosts />} />
+        <Route path='/tag/:id' element={<TagPost />} />
         <Route path='/chi-siamo' element={<ChiSiamo />} />
         <Route path='/contatti' element={<Contatti />} />
         <Route path='*' element={<NotFound />} />

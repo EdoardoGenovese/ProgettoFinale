@@ -32,7 +32,7 @@ class PostList extends React.Component {
         return (
             <div className='container'>
                 <div>
-                    <h3>Cerchi un tag?</h3>
+                    <h3 className='mb-3'>Cerchi un tag?</h3>
                     <Tags />
                 </div>
                 {posts}

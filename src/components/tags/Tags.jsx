@@ -14,7 +14,6 @@ class Tags extends React.Component{
         let api = new Api();
 
         api.tags().then(data => {
-            console.log(data)
             this.setState({
                 tags: data
             }); 
@@ -25,7 +24,7 @@ class Tags extends React.Component{
         let tags = this.state.tags.map((tag, index) => {
             return (
                 <div className="btn-group" role="group" aria-label="Basic example" key={index}>
-                    <Link to={`/tag/${tag.id}`} className="btn btn-light">{tag.name}</Link>
+                    <Link to={`/tag/${tag.id}`} className="btn btn-dark mb-2">{tag.name}</Link>
                 </div>
             )
         });

@@ -1,5 +1,6 @@
 import React from "react";
 import Api from "../../classes/Api";
+import { Link } from "react-router-dom";
 import withRouter from "../../functions/withRouter";
 
 class Post extends React.Component {
@@ -32,6 +33,7 @@ class Post extends React.Component {
             <div className="container">
                 <h2>{post.title}</h2>
                 <div dangerouslySetInnerHTML={{__html: post.content}} />
+                <Link to='/'>Torna alla Home</Link>
             </div>
         );
     }
