@@ -1,4 +1,3 @@
-import React from 'react';
 import { PostList } from '../posts/Posts';
 import Api from '../../classes/Api';
 import withRouter from '../../functions/withRouter';
