@@ -20,7 +20,7 @@ export default function Contatti() {
                             <input type="text" class="form-control mb-3" placeholder="Oggetto" required style="width: 90%">
                             <input type="text" class="form-control mb-3" placeholder="Scrivi il tuo messaggio" style="width: 90%">
                         </fieldset>
-                        <button class="btn btn-success">Invia il messaggio</button>
+                        <button class="btn btn-dark">Invia il messaggio</button>
                     </form>
                     <div class="col">
                         <h2>Sede</h2>

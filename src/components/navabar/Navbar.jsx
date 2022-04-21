@@ -22,8 +22,7 @@ export default class Navbar extends React.Component{
 
     render(){
         let links = this.state.data.map((item, index) => {
-            return (<li key={index}>
-                <Link className="dropdown-item" to={`/category/${item.id}`}>{item.name}</Link></li>)
+            return (<li key={index}><Link className="dropdown-item" to={`/category/${item.id}`}>{item.name}</Link></li>)
         });
 
         return(

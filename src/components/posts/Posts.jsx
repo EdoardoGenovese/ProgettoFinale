@@ -1,5 +1,7 @@
 import React from 'react';
 import Api from '../../classes/Api';
+import { Link } from 'react-router-dom';
+import { Tags } from '../tags/Tags';
 
 class PostList extends React.Component {
     constructor() {
@@ -21,15 +23,20 @@ class PostList extends React.Component {
 
     render() {
         let posts = this.state.posts.map((post, index) => 
-            <div key={index} className='container'>
-                <h3>{post.title.rendered}</h3>
-                <div dangerouslySetInnerHTML={{__html: post.content.rendered}} />
-                <small>by {post._embedded.author[0].name}</small>
-            </div>
-            );
+                <Link to={`/post/${post.id}`} className="no-link" key={index}>
+                    <h3>{post.title.rendered}</h3>
+                    <div dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
+                    <span className='h6'>di {post._embedded.author[0].name}</span>
+                </Link>);
 
         return (
-            <div>{posts}</div>
+            <div className='container'>
+                <div>
+                    <h3>Cerchi un tag?</h3>
+                    <Tags />
+                </div>
+                {posts}
+            </div>
         );
     }
 }

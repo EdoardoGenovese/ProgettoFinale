@@ -18,7 +18,7 @@ export default function Footer(){
                     <div className="col-6">
                         <h5>Iscriviti per sapere le novità!</h5>
                         <input type="text" className="form-control d-inline" placeholder="Inserisci la tua email..." required style={{width: "60%"}}></input>
-                        <button className="btn btn-primary d-inline mb-1 pl-3">Iscriviti!</button>
+                        <button className="btn btn-dark d-inline mb-1 pl-3">Iscriviti!</button>
                     </div>
                 </div>
             </div>

@@ -24,8 +24,10 @@ class CategoryPosts extends PostList {
     }
 
     componentDidUpdate(newProps) {
-        const { id } = newProps.router.params
-        this.fetchData(id);
+        const { id } = this.props.router.params
+        if(this.props.router.params !== newProps.router.params){
+            this.fetchData(id);
+        }
     }
 
     componentDidMount() {
